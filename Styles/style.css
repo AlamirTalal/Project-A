@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+:root {
+    --black: #2d2d2d;
+    --white: #fff;
+    --green: #009379;
+    --red: #FF6250;
+    --pink: #F3AFA8;
+    --gray: #F3F3F3;
+    --yello: #F7D684;
+}
+body {
+  font-size: 18px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+} .brand .logo {
+    font-weight: 600;
+} header a {
+    text-decoration: none;
+    color: var(--black);
+    margin: 0 1rem;
+} header a:hover {
+    text-decoration: underline;
+    color: var(--black);
+    margin: 0 1rem;
+} main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 3rem;
+} main .section {
+    max-width: 50%;
+} main .section img {
+    width: 100%;
+} main .section .about1 .about1P {
+    font-size: 1.5rem;
+    font-weight: 500;
+} main .section .about2 .about2H {
+    font-size: 5rem;
+    font-weight: 500;
+} main .section .bio .bioP {
+    margin: 1rem 0 3rem 0;
+    font-size: 1.3rem;
+} main .section .contactBtn .contactB {
+    outline: none;
+    border: none;
+    padding: 1.5rem 5rem;
+    background-color: var(--black);
+    color: var(--gray);
+    font-size: 1.3rem;
+    cursor: pointer;
+} .cards {
+    padding: 0 3rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    padding: 1rem;
+} .cards .card .img {
+    width: 33%;
+} .cards .card .img img {
+    width: 100%;
+} .cards .card .title {
+    font-size: 2rem;
+    font-weight: 500;
+} .cards .card .discription {
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.5rem;
+} .work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 3rem;
+} .title {
+    font-size: 2rem;
+    font-weight: 700;
+} .projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} .proJcard {
+    width: 30%;
+    margin: 5rem 1rem;
+} .proJcard .img {
+    width: 20rem;
+    height: 15rem;
+} .proJcard .img img {
+    width: 100%;
+    height: 100%;
+} .proJcard .tit {
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+} .proJcard .tit:hover {
+    text-decoration: underline;
+} .Testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3rem;
+} .Testimonial .TestimonialCards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+} .Testimonial .TestimonialCards .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: var(--gray);
+    border: none;
+    width: 23rem;
+    height: 20rem;
+    margin: 0.7rem;
+} .Testimonial .TestimonialCards .card .reviewer {
+    display: flex;
+    align-items: center;
+} .Testimonial .TestimonialCards .card .reviewer .img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+} .Testimonial .TestimonialCards .card .reviewer .img img{
+    width: 100%;
+    height: 100%;
+} .stars {
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    margin: 1.5rem 0 0.5rem 0;
+} footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 3rem;
+} .text {
+    width: 50%;
+} .text h3{
+    font-size: 3rem;
+    font-weight: 500;
+} .text p{
+    font-size: 1.3rem;
+    font-weight: 200;
+} .icons i {
+    font-size: 2rem;
+    margin: 1rem;
+    color: var(--black);
+} form {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 40%;
+} form input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--gray);
+    padding: 0 2rem;
+    margin: 0.6rem;
+} .contactB {
+    outline: none;
+    border: none;
+    padding: 1.5rem 5rem;
+    background-color: var(--black);
+    color: var(--gray);
+    font-size: 1.3rem;
+    margin: 0.6rem;
+    cursor: pointer;
+} .slide {
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    transform: translate(180px);
+    -webkit-transform: translate(180px);
+    -moz-transform: translate(180px);
+    -ms-transform: translate(180px);
+    -o-transform: translate(180px);
+    background-color: #fff;
+    top: 0;
+    right: -180px;
+    display: none;
+    z-index: 1;
+    overflow: hidden;
+} .slide h1 {
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 75px;
+    pointer-events: none;
+} .slide ul li {
+    list-style: none;
+} .slide ul li a {
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+} label input {
+     display: none;
+     visibility: hidden;
+     -webkit-appearance: none;
+} .toggle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    top: 20px;
+    right: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+} .toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: var(--black);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+} .toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+} .toggle .mid_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+} .toggle .bot_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+} label input:checked ~  .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate();
+    -moz-transform: rotate();
+    -ms-transform: rotate();
+    -o-transform: rotate();
+} label input:checked ~  .toggle .bot_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+} label input:checked ~  .toggle .mid_line{
+    opacity: 0;
+    transform: translate(20px);
+    -webkit-transform: translate(20px);
+    -moz-transform: translate(20px);
+    -ms-transform: translate(20px);
+    -o-transform: translate(20px);
+} label input:checked ~ .slide {
+    transform: translate(-180px);
+    -webkit-transform: translate(-180px);
+    -moz-transform: translate(-180px);
+    -ms-transform: translate(-180px);
+    -o-transform: translate(-180px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 180px;
+}
+
+@media(max-width: 480px) {
+    .slide, .toggle{
+        display: block;
+    }
+    .navigation {
+        display: none;
+    }
+    main {
+        padding: 0 0 !important;
+    }
+    .section img {
+        display: none;
+    } .section .about1 .about1P {
+        font-size: 0.8rem !important;
+    } .section .about2 .about2H {
+        font-size: 1.7rem !important;
+    } .section .bio .bioP {
+        font-size: 0.8rem !important;
+        margin: 0 !important;
+    } main .section .contactBtn .contactB {
+        padding: 0.9rem 2.5rem !important;
+        font-size: 1rem !important;
+    } .brands {
+        width: 100%;
+    } .brands img{
+        width: 100%;
+    } .cards {
+        padding: 0;
+        flex-wrap: wrap;
+    } .cards .card .title p{
+        font-size: 1.5rem;
+    } .cards .card .discription p{
+        font-size: 1rem;
+        align-self: center;
+    } .proJcard {
+        width: 100%;
+        margin: 2rem 1rem;
+    } .Testimonial .TestimonialCards .card {
+        width: 20rem;
+    } .stars {
+        height: 0.8rem;
+    } footer {
+        flex-direction: column;
+        align-items: start;
+    } .text, form {
+        width: 100%;
+    }.text h3 {
+        font-size: 1.9rem;
+    } .icons i {
+        font-size: 1.5rem;
+        margin: 1rem 0.7rem;
+    } .text p {
+        font-size: 0.9rem;
+    }
+}
